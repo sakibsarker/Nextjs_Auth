@@ -1,0 +1,23 @@
+
+.input_text{
+    @apply w-5/6 rounded-3xl;
+ 
+}
+.button{
+    @apply w-5/6 bg-blue-500;
+    @apply text-gray-100 rounded-xl;
+}
+.button_custom{
+    @apply w-5/6 border justify-center gap-2 hover:bg-gray-200;
+}
+
+.input_text+*{
+    color: aliceblue;
+}
+.input_text:focus+*{
+    color:green;
+}
+.input_text:not([type=email])~span:hover*{
+    color: greenyellow;
+    cursor: pointer;
+}
